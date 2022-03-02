@@ -29,10 +29,15 @@ const Detail = () => {
           <span>+</span>
         </AddButton>
         <GroupWatchButton>
-        <img src="/images/images/group-icon.png" alt="group button" />
-          
+        <img src="/images/images/group-icon.png" alt="group button" />      
         </GroupWatchButton>
       </Controls>
+      <SubTitle>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </SubTitle>
+      <Description>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti sequi exercitationem facere! Molestias possimus distinctio autem impedit debitis, molestiae quis.
+      </Description>
     </Container>
   );
 };
@@ -114,3 +119,14 @@ const AddButton = styled.button`
   }
 `;
 const GroupWatchButton = styled(AddButton)``;
+const SubTitle=styled.div`
+font-size:15px;
+min-height:20px;
+margin-top:26px;
+
+`;
+const Description=styled.div`
+line-height:1.4;
+font-size:20px;
+color:rgb(249,249,249);
+`;
