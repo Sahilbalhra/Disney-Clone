@@ -7,10 +7,8 @@ const LogIn = () => {
       <CTA>
         <CTALogoOne src="/images/images/cta-logo-one.svg" />
         <SignUp>Get All There</SignUp>
-        <Description>
-            Get Premium Account
-        </Description>
-        <CTALogoTwo src="/images/images/cta-logo-two.png"/>
+        <Description>Get Premium Account</Description>
+        <CTALogoTwo src="/images/images/cta-logo-two.png" />
       </CTA>
     </Container>
   );
@@ -36,14 +34,17 @@ const Container = styled.div`
     background-position: top;
     background-repeat: no-repeat;
     z-index: -1;
+    opacity: 0.7;
   }
 `;
 const CTA = styled.div`
   max-width: 650px;
   padding: 80px 40px;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
+//   margin-top: 100px;
+//   align-items: center;
 `;
 const CTALogoOne = styled.img``;
 const SignUp = styled.a`
@@ -58,17 +59,15 @@ const SignUp = styled.a`
   cursor: pointer;
   transition: all 250ms;
   letter-spacing: 1.5px;
-  margin-top:8px;
-  margin-bottom:12px;
+  margin-top: 8px;
+  margin-bottom: 12px;
   &:hover {
     background: #0483ee;
   }
 `;
-const Description=styled.p`
-font-size:16px;
-letter-spacing:1.5px;
-text-align:center;
-
+const Description = styled.p`
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-align: center;
 `;
-const CTALogoTwo=styled.img`
-`
+const CTALogoTwo = styled.img``;
